@@ -1,0 +1,7 @@
+<header>
+<h1><%= post.title %></h1>
+</header><!-- /header -->
+
+<img class="main_article_image" src="#" > <p><%= post.content.truncate(800) %></p>
+
+<%= link_to 'Leer el artículo completo', post_path(post), :class => 'main_article' %>

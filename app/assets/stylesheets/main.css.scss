@@ -1,0 +1,132 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.group { display: inline-block; clear: both; }
+/* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
+
+article, aside, figure, footer, header, nav, section { display: block; }
+
+body 
+{
+  background-color: #2F2F2F;;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; 
+}
+
+h1, h2, h3, h4
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+header#main-header
+{
+	background: #F49525;
+	height: 198px;
+	width: 950px;
+	margin: 0 auto;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+	#login
+	{
+		width: 234px;
+		height: 137px;
+		float: right;
+		margin: 5px;
+		background: #C87A1D;
+		border-radius: 5px;
+	}
+
+	nav#main-menu
+	{
+		height: 51px;
+		width: 950px;
+		background: red;
+		float: right;
+	}
+}
+
+#page-wrap
+{
+	background: #FFF;
+	margin: 0 auto;
+	width: 950px;
+
+	aside
+	{
+		margin: 10px 5px 5px 0;
+		padding-left: 5px;
+		float: left;
+		width: 239px;
+		border-left: 1px solid gray;
+	}
+
+	#main-content
+	{
+		margin-top: 10px;
+		float: left;
+		width: 700px;
+
+		#content-a
+		{
+			width: 690px;
+			height: 260px;
+			margin: 0 5px;
+			
+		}
+
+		#main-banner
+		{
+			width: 690px;
+			height: 25px;
+			margin: 5px;
+		}
+
+		#main-banner h2
+		{
+			font: 18px "Arial";
+			font-weight: bold;
+			color: #F49525;
+			padding-top: 3px;
+			margin: 5px 0;
+		}
+
+		#main-article
+		{
+			width: 688px;
+			height: 270px;
+			margin: 0 5px;
+			margin-top: 5px;
+			border: 1px dotted #5B5B5B;
+			position: relative;
+		}
+
+		#article-a
+		{
+			width: 333px;
+			height: 270px;
+			margin: 0 10px 5px 5px;
+			margin-top: 5px;
+			float: left;
+			border: 1px dotted #5B5B5B;
+		}
+
+		#article-b
+		{
+			width: 333px;
+			height: 270px;
+			margin: 0 5px 5px 10px;
+			margin-top: 5px;
+			float: left;
+			border: 1px dotted #5B5B5B;
+		}
+
+	}
+}

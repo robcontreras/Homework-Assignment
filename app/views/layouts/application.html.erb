@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EsMitv</title>
+  <title>EsMiTV</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <script type="text/javascript">
+	$(function() {
+    $('#wysiwyg').wysiwyg();
+	});
+</script>
+
 </head>
 <body>
 
-<%= yield %>
+<%= render :partial => 'layouts/header' %>
+
+<div id="page-wrap" class="group">
+
+	<div id="main-content">
+		<%= yield %>
+	</div><!-- END OF MAIN CONTENT -->
+
+	<aside>
+		<%= render :partial => 'layouts/aside' %>
+	</aside><!-- END OF ASIDE -->
+
+</div><!-- END OF PAGE WRAP -->
 
 </body>
 </html>
